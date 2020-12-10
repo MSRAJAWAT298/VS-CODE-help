@@ -1,0 +1,12 @@
+For the purposes of syntax highlighting and colouring and intellisense is it possible to treat other extensions (tpl, master, etc) as HTML?
+
+I know it's possible on a file by file basis by pressing CTRL+SHIFT+P and selecting "Change Language Mode" BUT I want it to work off file extension, and not have to redo it every time I open a new file.
+
+I also know it's possible for some languages by editing the json files in the plugins directory, BUT there doesn't seem to be one for HTML.
+
+There is a setting files.associations that can be used to assign file patterns to languages. For example:
+
+"files.associations": {
+  "*.tpl": "html",
+  "*.master": "html"
+}
